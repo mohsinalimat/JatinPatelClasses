@@ -2,8 +2,8 @@
 //  LoginViewModel.swift
 //  LoveInternational
 //
-//  Created by indianic on 23/07/18.
-//  Copyright © 2018 indianic. All rights reserved.
+//  Created by Jatin Patel on 23/07/18.
+//  Copyright © 2018 Jatin Patel. All rights reserved.
 //
 
 
