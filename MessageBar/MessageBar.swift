@@ -1,6 +1,6 @@
 //
-//  LoginViewModel.swift
-//  LoveInternational
+//  MessageBar.swift
+//  
 //
 //  Created by Jatin Patel on 23/07/18.
 //  Copyright © 2018 Jatin Patel. All rights reserved.
