@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToggleButtonView" customModule="LoveInternational" customModuleProvider="target">
+            <connections>
+                <outlet property="btnNo" destination="xom-pw-rHw" id="T91-Vx-8lQ"/>
+                <outlet property="btnYes" destination="sSC-Kb-naB" id="O16-ml-Ipa"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="59c-D9-CQ7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utG-1G-7ht">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSC-Kb-naB">
+                            <rect key="frame" x="5" y="5" width="75" height="40"/>
+                            <color key="backgroundColor" red="0.1333333333" green="0.63921568630000003" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="15"/>
+                            <state key="normal" title="YES">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnYesClicked:" destination="-1" eventType="touchUpInside" id="ju2-n3-sgV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xom-pw-rHw">
+                            <rect key="frame" x="80" y="5" width="75" height="40"/>
+                            <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="15"/>
+                            <state key="normal" title="NO">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnNoClicked:" destination="-1" eventType="touchUpInside" id="isy-jM-IjL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="xom-pw-rHw" secondAttribute="bottom" constant="5" id="HZz-uj-M5O"/>
+                        <constraint firstItem="xom-pw-rHw" firstAttribute="top" secondItem="utG-1G-7ht" secondAttribute="top" constant="5" id="J41-HF-SO2"/>
+                        <constraint firstItem="xom-pw-rHw" firstAttribute="width" secondItem="sSC-Kb-naB" secondAttribute="width" id="JJp-nw-V1o"/>
+                        <constraint firstAttribute="bottom" secondItem="sSC-Kb-naB" secondAttribute="bottom" constant="5" id="NUW-TQ-8gf"/>
+                        <constraint firstItem="sSC-Kb-naB" firstAttribute="top" secondItem="utG-1G-7ht" secondAttribute="top" constant="5" id="Tiv-B1-ZtZ"/>
+                        <constraint firstAttribute="height" constant="50" id="dOu-zh-5Gu"/>
+                        <constraint firstAttribute="width" constant="160" id="ifV-I8-evg"/>
+                        <constraint firstAttribute="trailing" secondItem="xom-pw-rHw" secondAttribute="trailing" constant="5" id="sle-nf-6lZ"/>
+                        <constraint firstItem="sSC-Kb-naB" firstAttribute="leading" secondItem="utG-1G-7ht" secondAttribute="leading" constant="5" id="weW-6z-oYh"/>
+                        <constraint firstItem="xom-pw-rHw" firstAttribute="leading" secondItem="sSC-Kb-naB" secondAttribute="trailing" id="zQq-Ja-ffG"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="utG-1G-7ht" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="1u6-1y-GJ0"/>
+                <constraint firstItem="utG-1G-7ht" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Quy-P2-O88"/>
+                <constraint firstAttribute="bottom" secondItem="utG-1G-7ht" secondAttribute="bottom" id="lIL-X4-xPc"/>
+                <constraint firstAttribute="trailing" secondItem="utG-1G-7ht" secondAttribute="trailing" id="owZ-0F-uN5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-175" y="-178"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pZW-Py-jTt" customClass="KPPickerView" customModule="KPPickerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="244"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2nw-Ps-Wqi" userLabel="Picker">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xeg-xE-GRy">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                            <connections>
+                                <outlet property="dataSource" destination="pZW-Py-jTt" id="39g-Wl-8IC"/>
+                                <outlet property="delegate" destination="pZW-Py-jTt" id="B9y-Sh-N8d"/>
+                            </connections>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Xeg-xE-GRy" secondAttribute="trailing" id="8Aj-7q-AnZ"/>
+                        <constraint firstItem="Xeg-xE-GRy" firstAttribute="leading" secondItem="2nw-Ps-Wqi" secondAttribute="leading" id="IzK-yN-Z55"/>
+                        <constraint firstItem="Xeg-xE-GRy" firstAttribute="top" secondItem="2nw-Ps-Wqi" secondAttribute="top" id="Sr9-Ic-FwJ"/>
+                        <constraint firstAttribute="bottom" secondItem="Xeg-xE-GRy" secondAttribute="bottom" id="s1s-Mo-6EH"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mcy-sI-Z3z" userLabel="Footer View">
+                    <rect key="frame" x="0.0" y="200" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSD-7l-PnW">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                            <state key="normal" title="Done"/>
+                            <connections>
+                                <action selector="btnDoneClick:" destination="pZW-Py-jTt" eventType="touchUpInside" id="NCR-Ev-Bn5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.30588235289999999" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="zSD-7l-PnW" firstAttribute="leading" secondItem="Mcy-sI-Z3z" secondAttribute="leading" id="6pG-68-CDL"/>
+                        <constraint firstAttribute="trailing" secondItem="zSD-7l-PnW" secondAttribute="trailing" id="Kvl-Kc-ELo"/>
+                        <constraint firstAttribute="height" constant="44" id="dXy-XB-pBZ"/>
+                        <constraint firstItem="zSD-7l-PnW" firstAttribute="top" secondItem="Mcy-sI-Z3z" secondAttribute="top" id="xjH-PI-dW3"/>
+                        <constraint firstAttribute="bottom" secondItem="zSD-7l-PnW" secondAttribute="bottom" id="zPd-7I-NvT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2nw-Ps-Wqi" firstAttribute="trailing" secondItem="ahw-Be-sZH" secondAttribute="trailing" id="QSk-pm-sdN"/>
+                <constraint firstItem="Mcy-sI-Z3z" firstAttribute="bottom" secondItem="ahw-Be-sZH" secondAttribute="bottom" id="fUu-0g-lvX"/>
+                <constraint firstItem="Mcy-sI-Z3z" firstAttribute="leading" secondItem="ahw-Be-sZH" secondAttribute="leading" id="faa-4G-DFa"/>
+                <constraint firstItem="Mcy-sI-Z3z" firstAttribute="trailing" secondItem="ahw-Be-sZH" secondAttribute="trailing" id="ltL-rO-rny"/>
+                <constraint firstItem="Mcy-sI-Z3z" firstAttribute="top" secondItem="2nw-Ps-Wqi" secondAttribute="bottom" id="s8X-n1-kzl"/>
+                <constraint firstItem="2nw-Ps-Wqi" firstAttribute="leading" secondItem="ahw-Be-sZH" secondAttribute="leading" id="wcm-5b-p1n"/>
+                <constraint firstItem="2nw-Ps-Wqi" firstAttribute="top" secondItem="ahw-Be-sZH" secondAttribute="top" id="xbN-Ob-d5Y"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="ahw-Be-sZH"/>
+            <connections>
+                <outlet property="backgroundView" destination="2nw-Ps-Wqi" id="ecW-UH-rZ5"/>
+                <outlet property="btnDone" destination="zSD-7l-PnW" id="fzc-iP-PVX"/>
+                <outlet property="headerView" destination="Mcy-sI-Z3z" id="wSc-8E-lld"/>
+                <outlet property="pickerView" destination="Xeg-xE-GRy" id="3Ka-iB-I3Z"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-146"/>
+        </view>
+    </objects>
+</document>
